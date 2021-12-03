@@ -18,6 +18,8 @@
   --icon-hover-color: #ffffff;
   --footer-icons-background-color: rgba(255, 255, 255, 0.1);
   --main-content-background-color: #f5f4fa;
+  --form-border-color: rgba(33, 33, 33, 0.2);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
 p,
@@ -748,6 +750,9 @@ img {
 .modal {
   width: 528px;
   min-height: 581px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -777,4 +782,49 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  margin-bottom: 12px;
+}
+
+.modal-field {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--form-border-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.modal-form-text::placeholder {
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--placeholder-color);
+}
+
+.modal-form-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid var(--form-border-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
 }
