@@ -954,7 +954,7 @@ img {
 }
 
 .modal-form-text::placeholder {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   color: var(--placeholder-color);
